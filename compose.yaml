@@ -1,6 +1,6 @@
 services:
   github-redirector:
-    build: .
+    image: ghcr.io/johnneerdael/nexio-redirect:latest
     container_name: nexio-github-redirector
     environment:
       PORT: "8080"
