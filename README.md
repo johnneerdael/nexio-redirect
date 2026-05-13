@@ -61,4 +61,12 @@ The public URLs become:
 
 - `https://download.nexioapp.org/release`
 - `https://download.nexioapp.org/pre-release`
-# nexio-redirect
+
+## GitHub Actions
+
+The Docker workflow runs tests and builds the image on pull requests and pushes.
+Pushes to `main` and version tags publish to:
+
+```text
+ghcr.io/johnneerdael/nexio-redirect
+```

@@ -1,0 +1,12 @@
+services:
+  github-redirector:
+    build: .
+    container_name: nexio-github-redirector
+    environment:
+      PORT: "8080"
+      CACHE_TTL: "5m"
+      GITHUB_OWNER: johnneerdael
+      GITHUB_REPO: nexio
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
